@@ -1,0 +1,135 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <title>Mostra e esconde divs</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <link rel="stylesheet" type="text/css" href="css/busca.css" />
+    <script src="https://kit.fontawesome.com/bf7e05c402.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <script type="text/javascript">
+      function mostradiv(div) {
+        if (div == "teste") {
+          document.getElementById("teste").style.display = "block";
+          document.getElementById("teste2").style.display = "none";
+        } else {
+          document.getElementById("teste").style.display = "none";
+          document.getElementById("teste2").style.display = "block";
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div class="navbar-container">
+        <nav>
+          <a href="#"><img class="logo" src="img/hdchostlogo.png" /></a>
+          <ul class="navbar-items">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Prices</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#" class="default-btn">Sign In</a></li>
+          </ul>
+        </nav>
+      </div>
+
+   <div class="container">
+     <h2>Pacientes</h2>
+          
+      <!-- <div class="selected">
+    Selecione
+  </div> -->
+    <form action="teste.html" method="post">
+      <select class="selected" 
+        onchange="mostradiv(this.value)"
+        name="sele&ccedil;&atilde;o"
+        size="1" style="height: 20%;"
+      >
+        <option value="teste">Matheus
+        </option>
+        <option value="teste2">
+          Paulo
+        </option>
+        
+        
+      </select>
+    </form>
+    <br />
+    <div id="teste" style="display: none">
+      <form action="index.html" method="post">
+        <!-- <select name="sele&ccedil;&atilde;o" size="1"> -->
+            <div class="col-md-6">
+                <label for="inputEmail4" class="form-label">Ultima PSG</label>
+                <input type="email" class="form-control" id="inputEmail4">
+              </div>
+              <div class="col-md-6">
+                <label for="inputPassword4" class="form-label">Ultima TMV</label>
+                <input type="password" class="form-control" id="inputPassword4">
+              </div>
+              <!-- <option>item 01</option>
+          <option>item 02</option>
+          <option>item 03</option> -->
+        <!-- </select> -->
+      </form>
+    </div>
+    <div id="teste2" style="display: none">
+      <form action="form.html" method="post">
+        <!-- <select name="teste" size="1"> -->
+            <br class="row g-3">
+                <div class="col-md-6">
+                  <label for="inputEmail4" class="form-label">Ultima PSG</label>
+                  <input type="email" class="form-control" id="inputEmail4">
+                </div>
+                <div class="col-md-6">
+                  <label for="inputPassword4" class="form-label">Ultima TMV</label>
+                  <input type="password" class="form-control" id="inputPassword4">
+                </div>
+                <div class="col-12">
+                  <label for="inputAddress" class="form-label">Indice de Apneia</label>
+                  <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                </div>
+                <div class="col-12">
+                  <label for="inputAddress2" class="form-label">IMC</label>
+                  <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                </div>
+                 <div class="col-md-6">
+                  <label for="inputCity" class="form-label">City</label>
+                  <input type="text" class="form-control" id="inputCity">
+                </div>
+                <!-- <div class="col-md-4">
+                  <label for="inputState" class="form-label">State</label>
+                  <select id="inputState" class="form-select">
+                    <option selected>Choose...</option>
+                    <option>...</option>
+                  </select>
+                </div> -->
+                <div class="col-md-2">
+                  <label for="inputZip" class="form-label">Zip</label>
+                  <input type="text" class="form-control" id="inputZip">
+                </div>
+                <div class="col-12">
+                  <div class="form-check">
+                    <!-- <input class="form-check-input" type="checkbox" id="gridCheck">
+                    <label class="form-check-label" for="gridCheck">
+                      Check me out
+                    </label> -->
+                  </div>
+                </div> 
+                </br><div class="col-12">
+                  <button type="submit" class="btn btn-primary">Sign in</button>
+                </div>
+            <!-- <option>item 01</option>
+          <option>item 02</option> -->
+        <!-- </select> -->
+      </form>
+    </div>
+    <footer>
+        <p>Tiago gomes @ 2022</p>
+      </footer>
+    <script src="main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  
+  </body>
+</html>
